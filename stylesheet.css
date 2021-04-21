@@ -16,11 +16,12 @@ h1, h2, h3, h4, h5, h6 {
 /*Desktop*/
 
 @media (max-width: 1440px) {
+
   body {
     margin: 0;
   }
 
-  .container-landing {
+  .container-bg {
     background-image: url('images/bg-desktop.svg');
     background-color: hsl(257, 40%, 49%);
     background-repeat: no-repeat;
@@ -29,8 +30,58 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px 50px;
   }
 
-  .logo {
+  #logo {
     width: 200px;
+  }
+
+  .illu {
+    display: flex;
+    justify-content: center;
+  }
+  .illu img {
+    margin-top: 8vh;
+  }
+
+  .container-infos {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+
+  .infos {
+    padding: 50px 40px;
+  }
+
+  .title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 27px;
+  }
+
+  .txt {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px hsl(257, 40%, 30%);
+  }
+
+  .icons {
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    padding:20px 70px;
   }
 
 }
@@ -40,16 +91,71 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 375px) {
 
-  .container-landing {
+  .container-bg {
+    display: flex;
+    flex-direction: column;
     background-image: url('images/bg-mobile.svg');
     background-color: hsl(257, 40%, 49%);
     background-repeat: no-repeat;
-    position:
+    background-size: contain;
     min-height: 100vh;
     padding: 30px;
   }
 
-  .logo {
+  #logo {
     width: 150px;
+  }
+
+  .illu {
+    display: flex;
+    justify-content: center;
+  }
+  .illu img {
+    width: 300px;
+    margin-top: 8vh;
+  }
+
+  .container-infos {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .infos {
+    padding: 0px 10px;
+    text-align: center;
+  }
+
+  .title {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .txt {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    box-shadow: 3px 3px 10px hsl(257, 40%, 30%);
+  }
+
+  .icons {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 70px 0;
   }
 }
